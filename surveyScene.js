@@ -39,7 +39,7 @@ module.exports = new Scenes.WizardScene("surveyScene",
     },
     ctx => {
         if(!["Утром", "В обед", "Вечером"].includes(ctx?.callbackQuery?.data)) return ctx.reply("Выберите одну из кнопок")
-        ctx.reply("Имели ли вы опыт в инвестировнии?", {reply_markup: {inline_keyboard: [[{text: "Да", callback_data: "withExp"}, {text: "Нет", callback_data: "withoutExp"}]]}})
+        ctx.reply("Имеете ли вы опыт в работе удаленно?", {reply_markup: {inline_keyboard: [[{text: "Да", callback_data: "withExp"}, {text: "Нет", callback_data: "withoutExp"}]]}})
         return ctx.wizard.next()
     },
     ctx => {
