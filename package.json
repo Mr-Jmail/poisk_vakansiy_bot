@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "dotenv": "^16.3.1",
+    "faker": "^6.6.6",
+    "node-fetch": "^2.7.0",
+    "telegraf": "^4.15.3"
+  }
+}
